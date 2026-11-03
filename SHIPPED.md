@@ -20,8 +20,8 @@ commits that were built into the shipped binary:
 
 | Library | Upstream ref at v12.15 | Pinned commit |
 |---|---|---|
-| x264 (`github.com/ffmpegwasm/x264`) | branch `4-cores` | `33cac6b77d5b9259c552156013a817ab23119612` |
-| LAME (`github.com/ffmpegwasm/lame`) | branch `master` | `2badea1974ae36cb8312afe99cff1e6b3b5decee` |
+| x264 (`github.com/julia-social/x264`, fork of `ffmpegwasm/x264`) | branch `4-cores` | `33cac6b77d5b9259c552156013a817ab23119612` |
+| LAME (`github.com/julia-social/lame`, fork of `ffmpegwasm/lame`) | branch `master` | `2badea1974ae36cb8312afe99cff1e6b3b5decee` |
 
 The other libraries and FFmpeg itself (`n5.1.4`) were already fetched by
 release tag, so they are unchanged.

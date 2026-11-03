@@ -24,7 +24,7 @@ RUN apt-get update && \
 FROM emsdk-base AS x264-builder
 # Pinned (julia-social): tip of ffmpegwasm/x264 branch 4-cores, as built into @ffmpeg/core 0.12.10. See SHIPPED.md.
 ENV X264_BRANCH=33cac6b77d5b9259c552156013a817ab23119612
-ADD https://github.com/ffmpegwasm/x264.git#$X264_BRANCH /src
+ADD https://github.com/julia-social/x264.git#$X264_BRANCH /src
 COPY build/x264.sh /src/build.sh
 RUN bash -x /src/build.sh
 
@@ -46,7 +46,7 @@ RUN bash -x /src/build.sh
 FROM emsdk-base AS lame-builder
 # Pinned (julia-social): tip of ffmpegwasm/lame branch master (LAME 3.100), as built into @ffmpeg/core 0.12.10. See SHIPPED.md.
 ENV LAME_BRANCH=2badea1974ae36cb8312afe99cff1e6b3b5decee
-ADD https://github.com/ffmpegwasm/lame.git#$LAME_BRANCH /src
+ADD https://github.com/julia-social/lame.git#$LAME_BRANCH /src
 COPY build/lame.sh /src/build.sh
 RUN bash -x /src/build.sh
 
