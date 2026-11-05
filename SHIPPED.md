@@ -63,3 +63,14 @@ will provide the complete corresponding source code on request: this
 repository at branch `julia-social-pins`, plus the pinned sources listed
 above. The offer is valid for at least three years from the date we last
 distribute the binary. To request it, email legal@julia.social.
+
+## Also shipped: @ffmpeg/core-mt 0.12.10
+
+Sign My Work also vendors `@ffmpeg/core-mt` 0.12.10, the multi-threaded build made by `make prd-mt` from the same tree. Its npm `gitHead` is 63ea4cc: v12.15 plus four commits that touch only the demo app. The same x264 and lame pins apply.
+
+SHA-256 of `package/dist/umd/` as shipped:
+- `ffmpeg-core.wasm`: be2c97605366b78f3f13e21b52e81a55a79e1f29c133b03a68ec187b1a2ec41a
+- `ffmpeg-core.js`: 62f5f5f468a37861da12c4581c321bb5ca8ba2f7b776377e08dd2ab72de293f9
+- `ffmpeg-core.worker.js`: 97322a227c5f3d5ccfd0d0825890a6deeba137106a09b633ca75cadf49ddd2cb
+
+The GPLv2 §3(b) written offer above covers this build too.
